@@ -1,5 +1,5 @@
 a {
-  color: #49f814ea;
+  color: #7bf806e7;
 }
 body {
   background-color: #cbd9e6;
@@ -9,7 +9,7 @@ body {
 .weatherapp {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/321/original/valentin-muller-bWtd1ZyEy6w-unsplash.jpg?1743887779");
   border-radius: 20px 15px;
-  max-width: 700px;
+  max-width: 800px;
   margin: 45px auto;
   padding: 30px;
   box-shadow: 0 30px 50px #372e4b14;
@@ -28,6 +28,7 @@ header {
   font-size: 18px;
   padding: 15px 20px;
 }
+
 .search-form-button {
   font-size: 18px;
   border: none;
@@ -36,6 +37,14 @@ header {
   background: #7eacd8;
   padding: 15px 30px;
   margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.search-form-button:hover {
+  background-color: #0dda1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 main {
   padding: 15px 0;
@@ -78,6 +87,37 @@ main {
 .weather-app-unity {
   margin-top: 10px;
   font: size 30px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #7fff00;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature {
+  padding: 0 8px;
 }
 footer {
   border-top: 1px solid #f9f7ff;
